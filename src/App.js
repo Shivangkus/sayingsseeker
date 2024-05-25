@@ -16,7 +16,7 @@ const App = () => {
       .get("https://api.adviceslip.com/advice")
       .then((response) => {
         const { advice } = response.data.slip;
-        const {id} = response.data.slip;
+        
         setAdvice(advice);
        
       })
