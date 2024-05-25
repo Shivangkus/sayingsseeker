@@ -5,7 +5,7 @@ import "./App.css";
 
 const App = () => {
   const [advice, setAdvice] = useState("");
-   const [id, setId] = useState("");
+ 
 
   useEffect(() => {
     fetchAdvice();
@@ -18,7 +18,7 @@ const App = () => {
         const { advice } = response.data.slip;
         const {id} = response.data.slip;
         setAdvice(advice);
-        setId(id);
+       
       })
       .catch((error) => {
         console.log(error);
